@@ -1,8 +1,15 @@
 ![image](https://pic2.zhimg.com/v2-3bc9d5f2c49a713c776e69676d7d56c5_r.jpg)
 
+## 推荐阅读
+
+[知乎：Git使用教程](https://zhuanlan.zhihu.com/p/30044692)
+
+[git小游戏](https://learngitbranching.js.org/?NODEMO=&locale=zh_CN)
+
 
 ## git基础
 **基础概念**
+
 - Workspace：工作区
 - Index / Stage：暂存区
 - Repository：仓库区（或本地仓库）
@@ -17,13 +24,33 @@
 - git config --global user.email "xxx@xx.xx"
 - git config --global user.name "xxx"
 
-
 **3. 添加和提交**
+
 - git add/rm
 - git commit
     - `-a` 将所有已跟踪的发生改变的文件提交到本地仓库
     - `-m` 添加描述
 - git status
+
+**4. 查看diff**
+
+- `git log -p` 查看每个commit的改动细节
+
+- `git log  --stat`大致看看改动了哪些内容
+
+- `git show commit_id  ` 查看具体某一次commit的更改内容
+
+- `git show commit_id file_name` 查看某次commit某个文件的更改内容
+
+- `git diff`  显示工作目录和暂存区之间的不同
+
+- `git diff --staged` 显示暂存区和上一条提交之间的不同
+
+- `git diff HEAD` 显示工作目录和上一条提交之间的不同
+
+  
+
+
 
 
 ## 提交树上移动
@@ -76,8 +103,4 @@ ssh-keygen -t rsa -C "your_secondemail@email.com" -f ~/.ssh/second-rsa
 
 
 
-## 推荐阅读
-[知乎：Git使用教程](https://zhuanlan.zhihu.com/p/30044692)
-
-[git小游戏](https://learngitbranching.js.org/?NODEMO=&locale=zh_CN)
 

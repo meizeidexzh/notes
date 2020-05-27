@@ -143,7 +143,12 @@ b=abc d //无法完成赋值
 ```
 
 **遍历命令行运行的结果**
-```
+```bash
 for file in `ls`; do echo $file; echo -e "\n"; done;
 
 ```
+
+## 文本处理
+
+#### grep基础教程
+
